@@ -1,0 +1,79 @@
+/* text */
+body {font-family: "lato", light;}
+h1 {
+    padding: 20px 0px 0px 20px;
+    color: #376b6d;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/* links */
+    a {
+        color: #376b6d;
+        text-decoration: none;
+    }
+    li a:link {
+        width: 120px;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        background-color: #376b6d;
+        border-right: 1px solid whitesmoke;
+        color: whitesmoke;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+    }
+    li a:visited {
+        width: 120px;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        background-color: #376b6d;
+        border-right: 1px solid whitesmoke;
+        color: whitesmoke;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+    }
+    li a:hover {
+        width: 120px;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        background-color: #376b6d;
+        border-right: 1px solid whitesmoke;
+        color: #0D5661;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+    }
+    li a:active {
+        width: 120px;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        background-color: #0D5661;
+        border-right: 1px solid whitesmoke;
+        color: whitesmoke;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+    }
