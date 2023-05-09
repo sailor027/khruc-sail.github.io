@@ -3,7 +3,7 @@ body {font-family: "De Valencia", "light";}
     h1 {
         font-size: 40pt;
         padding: 20px 0px 0px 20px;
-        color: #0D5661;
+        color: #113285;
         align-items: center;
         text-decoration: none;
     }
@@ -16,20 +16,21 @@ body {font-family: "De Valencia", "light";}
 
 div.col1 {
     display: block;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 5px;
+    align-items: center;
 }
 
 .container {
+    height: 100%;
     width: 100%;
     background-color: whitesmoke;
-    position: -webkit-sticky; /* Safari */
+    position: -stickywebkit-; /* Safari */
     position: sticky;
     top: 0;
 }
 
 .header {
-    width: 100%;
     font-size: 20pt;
     list-style-type: none;
     margin: 0;
@@ -44,7 +45,7 @@ div.col1 {
 
 /* links */
     a {
-        color: #0D5661;
+        color: #113285;
         text-decoration: none;
     }
         .active{
@@ -57,12 +58,17 @@ div.col1 {
             display: block;
             padding: 10px;
         }
+        .top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
 
     li a:link {
         height: 100%;
         text-align: center;
         align-content: center;
-        background-color: #376b6d;
+        background-color: #005CAF;
         border-right: 1px solid whitesmoke;
         color: whitesmoke;
         text-decoration: none;
@@ -73,7 +79,7 @@ div.col1 {
         height: 100%;
         text-align: center;
         align-content: center;
-        background-color: #376b6d;
+        background-color: #005CAF;
         border-right: 1px solid whitesmoke;
         color: whitesmoke;
         text-decoration: none;
@@ -84,9 +90,9 @@ div.col1 {
         height: 100%;
         text-align: center;
         align-content: center;
-        background-color: #376b6d;
+        background-color: #005CAF;
         border-right: 1px solid whitesmoke;
-        color: #0D5661;
+        color: #113285;
         text-decoration: none;
         display: block;
         padding: 10px;
@@ -95,10 +101,46 @@ div.col1 {
         height: 100%;
         text-align: center;
         align-content: center;
-        background-color: #0D5661;
+        background-color: #113285;
         border-right: 1px solid whitesmoke;
         color: whitesmoke;
         text-decoration: none;
         display: block;
         padding: 10px;
+    }
+
+
+/* Layout */
+    div.gal-row {
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px 0 0;
+        justify-content: center;
+    }
+        div.gal-col {
+            padding: 0 4px;
+            flex: 24%;
+            max-width: 24%;
+        }
+        .gal-col img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        div.gal-col {
+        flex: 50%;
+        max-width: 50%;
+        }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        div.gal-col {
+        flex: 100%;
+        max-width: 100%;
+        }
     }
